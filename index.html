@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Spotifo</title>
+<link rel="stylesheet" href="sidebar.css">
+<link rel="stylesheet" href="pag.css">
+<link rel="stylesheet" href="contact.css">
+<link rel="stylesheet" href="footer-play.css">
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet">
+<!-- -----------------------------------Estilos de la Página -->
+<style>
+html{
+min-width: 1000px;
+}
+body{
+margin: 0px;
+font-family: 'Source Sans Pro', sans-serif;
+font-weight: bold;
+
+display: grid;
+grid-template-columns: 1.2fr 4fr 1.5fr;
+grid-template-rows: 80vh 20vh;
+grid-template-areas: "Nav Contenido Social"
+"Reproductor Reproductor Reproductor";
+}
+</style>
+<!-- -----------------------------------Estilos de la Página -->
+
+</head>
+<body>
+
+<!-- -----------------------------------Sidebar -->
+<nav>
+
+<section id="nav-submenu">
+
+<figure tabindex="1" class="icon-submenu">
+<img src="icon-font/menu.svg" alt="">
+</figure>
+
+<!-- ------Menu Oculto -->
+<ul id="list-submenu">
+<li>
+<a href="#">Archivo</a>
+</li>
+<li>
+<a href="#">Editar</a>
+</li>
+<li>
+<a href="#">Ver</a>
+</li>
+<li>
+<a href="#">Reproducción</a>
+</li>
+<li>
+<a href="#">Ayuda</a>
+</li>
+</ul>
+</section>
+<!-- ------Menu Oculto -->
+
+
+<section id="menu">
+<ul>
+
+<li>
+<img src="icon-font/home.svg" alt="">
+<a href="#">Inicio</a>
+</li>
+<li>
+<img src="icon-font/search.svg" alt="">
+<a href="#">Buscar</a>
+</li>
+<li>
+<img src="icon-font/library-music.svg" alt="">
+<a href="#">Tu Biblioteca</a>
+</li>
+
+<br>
+
+<li>
+<img src="icon-font/add.svg" alt="">
+<a href="#">Crear playlist</a>
+</li>
+<li>
+<img src="icon-font/favorite.svg" alt="">
+<a href="#">Tus me gusta</a>
+</li>
+</ul>
+</section>
+
+<hr>
+
+<section id="list-saved">
+<ul>
+<li>
+<a href="#">Top Indie Christian 2022</a>
+</li>
+<li>
+<a href="#">Christian Alternative 2022</a>
+</li>
+</ul>
+</section>
+</nav>
+<!-- -----------------------------------Contenido -->
+
+<main>
+
+<header>
+<section class="side-left">
+<a id="left" href=""><img src="icon-font/arrow-left.svg" alt=""></a>
+<a id="right" href=""><img src="icon-font/arrow-right.svg" alt=""></a>
+</section>
+
+<section class="side-right">
+
+<button>PREMIUM</button>
+
+<div class="account-submenu">
+<div  class="account">
+<a id="icon-user" href="#"><img src="icon-font/user.svg" alt="">Username</a>
+
+<div class="icon-submenu">
+<a id="down" href="#"><img src="icon-font/arrow-down.svg" alt=""></a>
+<a id="up" href="#"><img src="icon-font/arrow-up.svg" alt=""></a>
+</div>
+</div>
+
+<!-- -------------Menu Oculto -->
+<div class="header-submenu">
+<ul>
+<li><a href=""></a>Cuenta</li>
+<li><a href=""></a>Perfil</li>
+<li><a href=""></a>Cambiate a Premium</li>
+<li><a href=""></a>Sesión Privada</li>
+<li><a href=""></a>Preferencias</li>
+<hr>
+<li><a href=""></a>Cerrar Sesión</li>
+</ul>
+</div>
+<!-- -------------Menu Oculto -->
+</div>
+</section>
+</header>
+
+<section class="pag">
+<h2>Buenas Noches</h2>
+
+<section class="news">
+<div class="cont">
+<div class="post">
+<img class="album" src="icon-font/loading.jpg" alt="">
+<h3>Tus me gusta</h3>
+</div>
+<img class="i-play" src="icon-font/play-solid.svg" alt="">
+</div>
+
+<div class="cont">
+<div class="post">
+<img class="album" src="icon-font/loading.jpg" alt="">
+<h3>Radar de Novedades</h3>
+</div>
+<img class="i-play" src="icon-font/play-solid.svg" alt="">
+</div>
+
+<div class="cont">
+<div class="post">
+<img class="album" src="icon-font/loading.jpg" alt="">
+<h3>Recientes</h3>
+</div>
+<img class="i-play" src="icon-font/play-solid.svg" alt="">
+</div>
+
+<div class="cont">
+<div class="post">
+<img class="album" src="icon-font/loading.jpg" alt="">
+<h3>Más Recientes</h3>
+</div>
+<img class="i-play" src="icon-font/play-solid.svg" alt="">
+</div>
+</section>
+
+<h2>Hecho Para Ti</h2>
+
+<section class="mixes">
+<div class="mix">
+<div class="post2">
+<img class="album2" src="icon-font/loading.jpg" alt="">
+
+
+<h3>Daily Mix 1</h3>
+</div>
+<img class="i-play2" src="icon-font/play-solid.svg" alt="">
+</div>
+
+<div class="mix">
+<div class="post2">
+<img class="album2" src="icon-font/loading.jpg" alt="">
+
+
+<h3>Daily Mix 2</h3>
+</div>
+<img class="i-play2" src="icon-font/play-solid.svg" alt="">
+</div>
+<div class="mix">
+<div class="post2">
+<img class="album2" src="icon-font/loading.jpg" alt="">
+
+
+<h3>Daily Mix 3</h3>
+</div>
+<img class="i-play2" src="icon-font/play-solid.svg" alt="">
+</div>
+</div>
+</section>
+
+<h2>Similares</h2>
+
+<section class="mixes">
+<div class="mix">
+<div class="post2">
+<img class="album2" src="icon-font/loading.jpg" alt="">
+
+
+<h3>Daily Mix 1</h3>
+</div>
+<img class="i-play2" src="icon-font/play-solid.svg" alt="">
+</div>
+
+<div class="mix">
+<div class="post2">
+<img class="album2" src="icon-font/loading.jpg" alt="">
+
+
+<h3>Daily Mix 2</h3>
+</div>
+<img class="i-play2" src="icon-font/play-solid.svg" alt="">
+</div>
+<div class="mix">
+<div class="post2">
+<img class="album2" src="icon-font/loading.jpg" alt="">
+
+
+<h3>Daily Mix 3</h3>
+</div>
+<img class="i-play2" src="icon-font/play-solid.svg" alt="">
+</div>
+</div>
+</section>
+
+
+</section>
+
+</main>
+
+<!-- -----------------------------------SideNavContacts -->
+
+<section class="contacts">
+<div class="contact-title">
+  <h2>Actividad de Amigos</h2>
+  <span><img src="icon-font/add-person.svg" alt=""></span>
+</div>
+
+<p>Deja que tus amigos y seguidores en Spotify vean lo que estás escuchando.</p>
+
+<div class="icon-contacts">
+  <span><img src="icon-font/account.svg" alt=""></span>
+  <span><img src="icon-font/lines-text.svg" alt=""></span>
+</div>
+<div class="icon-contacts">
+  <span><img src="icon-font/account.svg" alt=""></span>
+  <span><img src="icon-font/lines-text.svg" alt=""></span>
+</div>
+<div class="icon-contacts">
+  <span><img src="icon-font/account.svg" alt=""></span>
+  <span><img src="icon-font/lines-text.svg" alt=""></span>
+</div>
+
+<p>Ve a Configuración > Social y activa la opción para compartir lo que escuchas con tus seguidores de Spotify. Puedes desactivar esta opción en cualquier momento.</p>
+
+<button class="button-preference">PREFERENCIAS</button>
+
+</section>
+
+<!-- -----------------------------------Footer Play -->
+
+<footer id="play-bar">
+<div class="left">
+<img id="album" src="icon-font/loading.jpg" alt="">
+<div class="description">
+<h3>Song</h3>
+<h4>Artist</h4>
+</div>
+
+<div class="icon-fav">
+
+<figure id="fav-border" onclick="showSolid()">
+<img tabindex="1" src="icon-font/fav-border.svg" alt="">
+</figure>
+
+<figure id="fav-solid" onclick="hideSolid()">
+<img tabindex="1" src="icon-font/fav.svg" alt="">
+</figure>
+
+</div>
+</div>
+
+<div class="center">
+<div class="button-bar">
+<img id="shuffle" tabindex="1" src="icon-font/shuffle.svg" alt="">
+<img id="previous" tabindex="1" src="icon-font/previous.svg" alt="">
+
+<img id="play" onclick="showpause()" tabindex="1" src="icon-font/play.svg" alt="">
+<img id="pause" onclick="showplay()" tabindex="1" src="icon-font/pause.svg" alt="">
+
+<img id="next" tabindex="1" src="icon-font/next.svg" alt="">
+<img id="replay" tabindex="1" src="icon-font/replay.svg" alt="">
+</div>
+
+<div class="bar-time">
+<span>00:00</span>
+<progress id="play" max="100" value="0"></progress>
+<span>00:00</span>
+</div>
+</div>
+
+<div class="right">
+<img src="icon-font/list.svg" alt="">
+<img src="icon-font/vol-on.svg" alt="">
+<progress id="volumen" max="100" value="70" ></progress>
+</div>
+</footer>
+
+<script src="java.js"></script>
+
+</body>
+</html>

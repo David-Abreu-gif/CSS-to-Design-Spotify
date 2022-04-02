@@ -1,0 +1,100 @@
+:root{
+--color-darkgray: #141414a4;
+--color-gray: #1f1f1f;
+--color-softgray: #5e5e5e;
+--color-lightgray: #808080;
+--color-black: #000000;
+--color_white: #ffffff;
+
+--icon-size: 30px;
+--opacity: 0.7;
+}
+
+/* ------------------------------------------------------Navegación */
+
+nav{
+grid-area: Nav;
+background: var(--color-black);
+position: relative;
+padding: 20px;
+font-weight: bold;
+overflow: auto
+}
+
+/* ----------Scrollbar */
+nav::-webkit-scrollbar {
+width: 12px;
+}
+  
+.nav::-webkit-scrollbar-track {
+background: transparent;
+}
+  
+nav::-webkit-scrollbar-thumb {
+background-color: #b6b6b6b2;
+}
+/* ----------Scrollbar */
+
+
+nav .icon-submenu{/*-------Menu Oculto*/
+cursor: pointer;
+margin: 0px;
+}
+.icon-submenu:focus-within ~ #list-submenu{
+display: block;
+
+}
+nav #list-submenu{
+position: absolute;
+display: none;
+top: 40px;
+left: 20px;
+background: var(--color-softgray);
+padding-inline: 0em;
+padding-block: 0.2em;
+border: 1px solid var(--color-lightgray);
+z-index: 1;
+cursor: pointer;
+}
+nav #list-submenu a{
+color: var(--color_white);
+text-decoration: none;
+padding-inline:  30px;
+}
+nav #list-submenu li:hover{
+background: var(--color-lightgray)
+}
+/*-------Menu Oculto*/ 
+
+nav ul{
+list-style: none;
+padding-inline: 15px;
+}
+nav ul li{
+display: flex;
+align-items: center;
+opacity: var(--opacity);
+}
+nav #menu a{
+color: var(--color_white);
+text-decoration: none;
+display: inline;
+}
+nav #menu li:hover{
+opacity: 1;
+}
+nav hr{
+border: 2px solid var(--color-gray);
+border-radius: 25px;
+}
+nav img{
+width: var(--icon-size);
+}
+nav #list-saved a{
+color: var(--color_white);
+text-decoration: none;
+opacity: var(--opacity);
+}
+nav #list-saved a:hover{
+opacity: 1;
+}

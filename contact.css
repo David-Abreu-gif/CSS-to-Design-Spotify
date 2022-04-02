@@ -1,0 +1,83 @@
+:root{
+--color-darkgray: #141414a4;
+--color-gray: #1f1f1f;
+--color-softgray: #5e5e5e;
+--color-lightgray: #808080;
+--color-black: #000000;
+--color_white: #ffffff;
+
+--icon-size: 30px;
+--opacity: 0.7;
+}
+/* -----------------------------------Contactos */
+
+/* ----------Scrollbar */
+.contacts::-webkit-scrollbar {
+width: 12px;
+}
+  
+.contacts::-webkit-scrollbar-track {
+background: transparent;
+}
+  
+.contacts::-webkit-scrollbar-thumb {
+background-color: #b6b6b6b2;
+}
+/* ----------Scrollbar */
+
+.contacts{
+grid-area: Social;
+padding: 20px;
+overflow: auto;
+background: black;
+color: var(--color_white);
+}
+.contacts img{
+width: var(--icon-size);
+}
+.contacts h2{
+margin: 0px;
+}
+.contact-title{
+display: flex;
+justify-content: space-between;
+}
+
+
+.contact-title span{
+  background: black;
+}
+.contact-title span img{
+  padding: 5px;
+  border-radius: 50px;
+  object-position: -2px 0px;
+  filter: invert(40%);
+  transition: 0.5s;
+}
+.contact-title span img:hover{
+  filter: invert(0%);
+  background: rgb(77, 77, 77)
+}
+p{
+  color: #ffffff96;
+  margin: 5px;
+}
+
+.icon-contacts span img{
+  width: 40px;
+}
+
+span{
+  align-self: center;
+}
+
+.button-preference{
+  width: 100%;
+  padding: 12px;
+  font-weight: bold;
+  border-radius: 25px 25px 25px 25px;
+  border: 1px solid white ;
+}
+.button-preference:hover{
+  transform: scale(1.05);
+}

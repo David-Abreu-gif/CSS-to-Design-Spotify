@@ -1,0 +1,130 @@
+:root{
+--color-green: #00ff00;
+--icons-size: 30px;
+--icon-opacity: 0.5;
+}
+  
+/* ------------------------------------------------------Footer-Play */
+
+footer{
+grid-area: Reproductor;
+font-weight: bold;
+background: #161616;
+display: flex;
+padding: 15px;
+align-items: center;
+justify-content: space-between;
+color: white;
+}
+#play-bar .left, .center, .right{
+position: relative;
+display: flex;
+width: 1fr;
+align-items: center;
+}
+
+/* ------------------------------------------------------Play_Left */
+#play-bar .left #album{
+width: 50px;
+height: 50px;
+border: 2px solid black;
+padding: 15px;
+background: #4e4e4e;
+}
+#play-bar .left .description{
+padding: 15px;
+}
+h3, h4{
+margin: 0px;
+}
+
+#play-bar .left{
+padding-left: 15px;
+}
+
+
+
+.icon-fav{
+position: relative;
+display: block;
+}
+#fav-border{
+opacity: var(--icon-opacity);
+}
+#fav-border.active{
+display: none;
+}
+
+#fav-border:hover{
+opacity: 1;
+}
+#fav-solid{
+display: none;
+}
+
+#fav-solid.active{
+display: block;
+}
+
+/* ------------------------------------------------------Play_Center */
+
+#play-bar .center{
+display: block;
+align-items: center;
+}
+#play-bar .center .button-bar{
+display: flex;
+justify-content: center;
+}
+#play-bar .center .bar-time{
+text-align: center;
+}
+
+#play-bar .center img{
+width: 40px;
+opacity: var(--icon-opacity);
+}
+#play-bar .center img:hover{
+opacity: 1;
+filter: none;
+}
+#play-bar .center #previous:active{
+opacity: 1;
+filter: invert(0.4) sepia(1) hue-rotate(100deg) saturate(1000%);
+}
+#play-bar .center #next:active{
+opacity: 1;
+filter: invert(0.4) sepia(1) hue-rotate(100deg) saturate(1000%);
+}
+#play-bar .center #shuffle:focus-within{
+opacity: 1;
+filter: invert(0.4) sepia(1) hue-rotate(100deg) saturate(1000%);
+}
+#play-bar .center #replay:focus{
+opacity: 1;
+filter: invert(0.4) sepia(1) hue-rotate(100deg) saturate(1000%);
+}
+
+
+#play-bar .center #pause{
+display: none;
+opacity: 1;
+}
+
+
+
+/* ------------------------------------------------------Play_Right */
+
+#play-bar .right{
+display: flex;
+align-items: center;
+justify-content: flex-end;
+padding-right: 15px;
+}
+
+#play-bar .right img{
+opacity: var(--icon-opacity);
+}
+#play-bar .right img:hover{
+opacity: 1;
+}

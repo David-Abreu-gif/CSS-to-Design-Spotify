@@ -1,0 +1,276 @@
+:root{
+--color-darkgray: #141414a4;
+--color-gray: #1f1f1f;
+--color-softgray: #5e5e5e;
+--color-lightgray: #808080;
+--color-black: #000000;
+--color_white: #ffffff;
+--color-green: #00ff00
+
+--icon-size: 30px;
+--opacity: 0.7;
+--shadow: -5px 5px 6px 0px #00000066;
+}
+ 
+/* ----------------------------------------------Contenido */
+
+main{
+grid-area: Contenido;
+overflow: auto;
+background: #1f1f1f;
+}
+main a{
+color: var(--color_white);
+text-decoration: none;
+}
+
+/* ----------Scrollbar */
+main::-webkit-scrollbar {
+width: 12px;
+}
+  
+main::-webkit-scrollbar-track {
+background: transparent;
+}
+  
+main::-webkit-scrollbar-thumb {
+background-color: #b6b6b6b2;
+}
+/* ----------Scrollbar */
+
+
+main header{
+padding: 1em;
+display: flex;
+justify-content: space-between;
+position: sticky;
+top: 0px;
+background: #560bad;
+height: 35px;
+align-items: center;
+z-index: 1;
+}
+
+.side-left img{
+width: var(--icon-size);
+border-radius: 50%;
+padding: 0.1 em;
+background: rgba(0, 0, 0, 0.548);
+object-fit: scale-down;
+opacity: var(--opacity);
+vertical-align: middle;
+}
+.side-left img:hover{
+opacity: 1;
+background: var(--color-black);
+}
+
+.side-right{
+display: flex;
+}
+/* ------------------Boton Premium */
+.side-right button{ 
+padding-inline: 25px;
+border-radius: 25px 25px 25px 25px;
+width: min-content;
+background: black;
+padding: auto;
+color: #ffffff96;
+border: 1.5px solid gray;
+text-align: center;
+vertical-align: middle;
+margin-right: 20px;
+opacity: 0.8;
+}
+.side-right button:hover{
+transform: scale(1.1);
+opacity: 1;
+color: white;
+}
+/* ------------------Boton Premium */
+/* ------------------Cuenta del Usuario */
+.side-right .account{
+background: var(--color-black) ;
+border-radius: 25px;
+display: flex;
+padding: 2px;;
+opacity: 0.8;
+}
+.account:hover{
+background: var(--color-softgray);
+opacity: 1;
+}
+.account a img{
+vertical-align: middle;
+}
+
+.account #icon-user img{
+background: var(--color-lightgray);
+position: relative;
+border-radius: 50%;
+padding:1px;
+margin-right: 5px;
+object-fit: scale-down;
+}
+
+.icon-submenu{
+align-self: center;
+}
+
+.icon-submenu #up{
+display: none;
+}
+.icon-submenu #down{
+display: initial;
+}
+
+.account:focus-within ~ .header-submenu{
+display: block;
+}
+
+/* -------------Menu Oculto */
+.header-submenu{
+position: absolute;
+display: none;
+top: 65px;
+right: 10px;
+background: var(--color-lightgray);
+border-radius: 5px;
+box-shadow: var(--shadow);
+}
+.header-submenu ul{
+list-style: none;
+margin-block: 10px;
+padding-inline: 1px;
+}
+.header-submenu li{
+padding-inline: 15px;
+color: var(--color_white);
+}
+.header-submenu li:hover{
+background: var(--color-softgray);
+}
+.header-submenu hr{
+border: 2px solid var(--color-softgray);
+border-radius: 25px;
+margin-inline: 15px;
+}
+/* -------------Menu Oculto */
+/* ------------------Cuenta del Usuario */
+
+
+/* ------------------Página */
+.pag{
+padding: 25px;
+background-image: linear-gradient(to bottom, #560bad 100px, #141414 200px);
+}
+.pag h2, h3{
+color: var(--color_white);
+}
+
+.pag .i-play{
+margin: 0px;
+border-radius: 50%;
+width: 50px;
+position: absolute;
+right: 15px;
+opacity: 0;
+transition: 0.3s;
+}
+.pag .post:hover ~ .i-play{
+opacity: 1;
+}
+.pag .i-play:hover{
+opacity: 1;
+}
+.pag .post h3{
+width: 50%;
+}
+
+
+
+/* -------------Grid 2 Columnas */
+.pag .news{
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+grid-template-rows: repeat(2, 80px);
+grid-gap: 25px;
+}
+.pag .news .cont{
+position: relative;
+background: var(--color-gray);
+display: flex;
+align-items: center;
+border-radius: 5px;
+transition: 0.5s;
+}
+.pag .cont:hover{
+background: rgb(58, 58, 58);
+}
+.pag .post{
+width: 100%;
+display: flex;
+align-items: center;
+}
+.news .album{
+background: var(--color-softgray);
+padding: 5px;
+width: 69px;
+border-radius: 5px 0px 0px 5px;
+}
+.cont h3{
+padding-inline: 15px;
+}
+/* -------------Grid 2 Columnas */
+/* -------------Grid 3 Columnas */
+
+.pag .mixes{
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+grid-template-rows: repeat(1, 100%);
+grid-gap: 25px;
+}
+.pag .mix{
+position: relative;
+background: var(--color-gray);
+border-radius: 5px;
+transition: 0.3s;
+}
+.pag .mix:hover{
+background: rgb(58, 58, 58);
+}
+
+.mixes img{
+display: block;
+margin-left: auto;
+margin-right: auto;
+padding: 5px;
+width: 90%;
+background: var(--color-softgray);
+border-radius: 5px;
+}
+.mixes h3{
+padding-block: 15px;
+}
+
+.mixes .post2{
+position: relative;
+padding: 15px;
+}
+.mix .i-play2{
+position: absolute;
+width: 50px;
+background: transparent;
+bottom: 75px;
+right: 25px;
+opacity: 0;
+border-radius: 50%;
+transition: 0.3s;
+padding: 0px;
+transition: 0.3s;
+}
+.post2:hover ~ .i-play2{
+opacity: 1;
+}
+
+/* -------------Grid 3 Columnas */
